@@ -2,7 +2,7 @@ deployment:
   prod:
     branch: master
     heroku:
-      appname: vsdta-verysimpletodoapp
+      appname: div-deliveritwell
 machine:
   node:
     version: 8.1.4
