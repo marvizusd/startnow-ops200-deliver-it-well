@@ -37,4 +37,14 @@ describe('server/app.js', function() {
       done();
     });
   });
+
+  it('page says This Project is almost done', (done) => {
+    chai.request(server)
+      .get('/')
+      .end((err, res) => {
+        expect(err).not.exist;
+        expect(JSON.stringify(res.text)).to.contain('This Project is almost done');
+        done();
+      });
+    });
 })
